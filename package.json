@@ -2,11 +2,19 @@
   "name": "musicaly-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start":"npm run build && electron ."
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^16.0.8",
+    "typescript": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.6.10"
+  }
 }
